@@ -1,0 +1,10 @@
+spring:
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://1.15.20.85:3306/mysql?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: zhengchuan098@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+#整合mybaits
