@@ -1,4 +1,11 @@
 spring:
+  port: 8080
+  application:
+    name: doSQLService
+  cloud:
+    zookeeper:
+      enabled: true #true:开启zookeeper外部配置，false:读取本地配置
+      connect-string: 1.15.20.85:2181
   #数据库配置
   datasource:
     url: jdbc:mysql://1.15.20.85:3306/mysql?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai

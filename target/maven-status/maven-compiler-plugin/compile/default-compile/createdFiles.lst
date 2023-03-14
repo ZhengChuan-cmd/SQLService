@@ -1,0 +1,5 @@
+com\myself\dosql\demo\service\SqlService.class
+com\myself\dosql\demo\service\impl\SqlServiceImpl.class
+com\myself\dosql\demo\DemoApplication.class
+com\myself\dosql\demo\controller\SqlController.class
+com\myself\dosql\demo\mapper\SqlMapper.class

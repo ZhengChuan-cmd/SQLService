@@ -1,11 +1,9 @@
 package com.myself.dosql.demo;
 
-import com.myself.dosql.demo.mapper.SqlMapper;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import com.myself.dosql.demo.service.SqlService;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -17,13 +15,14 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @Version 1.0
  */
 @SpringBootTest
+@Slf4j
 public class SqlTest {
     @Autowired
-    private SqlMapper sqlMapper;
+    private SqlService sqlService;
     @Test
     public void sqlTest1(){
         String sql="select id  from test1;";
-        sqlMapper.writesql(sql);
+        log.info(sqlService.writeSqlReturn(sql).toString());
 
     }
 }

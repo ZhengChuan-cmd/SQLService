@@ -12,12 +12,12 @@ public interface SqlService {
      * 无返回运行sql语句
      * @param sql 需要运行的sql语句
      */
-    void writesql(String sql);
+    void writeSql(String sql);
 
     /**
      * 有返回运行sql语句
      * @param sql 需要运行的sql语句
      * @return 数据库返回的数据
      */
-    Object writesqlreturn (String sql);
+    Object writeSqlReturn (String sql);
 }
